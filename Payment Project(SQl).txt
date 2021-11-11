@@ -1,0 +1,40 @@
+create database banking;
+use banking;
+show tables;
+create table customer(Customer_ID int ,AccountHolder_Name varchar(50),Clear_Balance int,
+Transfer_Type varchar(20),Overdraft bool,BIC varchar(20),Rec_Institution_Name varchar(50),
+Message_Code varchar(10),Instruction varchar(100),CUR varchar(20),VALUE float); 
+
+desc customer;
+alter table customer modify Customer_ID bigint;
+alter table customer modify CUR enum("USD","EUR","GBP","JPY");
+alter table customer modify Overdraft enum("yes","no");
+
+
+
+
+insert into customer values(83020817828620,"A KRISHNA MOHAN",56000,"Customer Transfer",1,
+"ABBLINBBXXX","AB BANK LIMITED","CHQB","beneficiary customer must be paid by cheque only","USD",74.21);
+
+select * from customer;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
