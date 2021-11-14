@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Payment Gateway</title>
+        <link rel="stylesheet" href="payment.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="register">
+        <h2>Online Money Transfer</h2>
+        <form id="register" method="post">
+        <label>Customer ID:</label><br><input type="text" name="customer id" placeholder="Enter Customer ID"><br><br>
+        <label>Account Holder Name:</label><br><input type="text" name="Holder name" placeholder="Enter Account Holder Name"><br><br>
+        <label>Clear Balance:</label><br><input type="number" name="clear balance"><br><br>
+        <label>Transfer Type:</label><br><select>
+            <option>Customer Transfer</option>
+            <option>Own Transfer</option>
+            <option>Bank Transfer For Own</option>
+        </select><br><br>
+        <label>Overdraft</label><br><input type="radio" name="overdraft"><small><font color="white">Yes</font></small>
+                <input type="radio" name="overdraft"><small><font color="white">No</font></small><br><br>
+              <label>BIC Code:</label><br><input type="text" name="bic" placeholder="Enter BIC code"> <br><br>
+              <label>Rec Institution Name:</label><br><input type="text" name="rac name" placeholder="Enter Rec Institution Name"><br><br>
+               <label>Message:</label><br><select>
+                   <option>CHQB-beneficiary customer must be paid by cheque only</option>
+                   <option>CORT-Payment is made in settlement for a trader</option>
+                   <option>HOLD-Beneficiary customer or claimant will call upon identification</option>
+                   <option>INTC-Payment between two companies that belongs to the same group</option>
+                   <option>PHOB-Please advise the intermediary institution by phone</option>
+                   <option>PHOI-Please advise the intermediary by phone</option>
+                   <option>PHON-Please advise the account with institution by phone</option>
+                   <option>REPA-Payments has a related e-Payments reference</option>
+                   <option>SDVA-Payment must be executed with same day</option>                  
+               </select><br><br>
+                <label>Currency Type:</label><br><select>
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                    <option>JPY</option>
+                </select><br><br>
+                <button id="proceed">Proceed</button> 
+            </form> 
+        </div> 
+        </div> 
+    </body>
+</html>
